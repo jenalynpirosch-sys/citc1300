@@ -17,9 +17,16 @@ header {
     text-align: center;
     padding: 30px;
 }
-header h1 {
+h1 {
     color: lightgray;
     font-size: 50px;
+}
+h2 {color: lightgrey;
+    text-align: center;
+}
+
+h3 {color: #730202;
+    text-align: center;
 }
 
 nav {
@@ -47,6 +54,7 @@ main {
     border: 2px solid;
     padding: 20px;
     border-radius: 20px;
+    color: white;
 }
 
 main h2 {
