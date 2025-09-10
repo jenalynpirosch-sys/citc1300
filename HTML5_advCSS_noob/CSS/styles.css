@@ -222,3 +222,15 @@ iframe {
     border-radius: 12px;  
     overflow: hidden; 
 }
+
+.about-photos {
+  display: flex;
+  margin-bottom: 10px;       
+}
+
+.about-photos img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(242, 241, 233, 0.15);
+}
