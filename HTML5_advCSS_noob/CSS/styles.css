@@ -22,7 +22,8 @@ a:hover {
 
 #container {
     background-color: #25000e;
-    width: 45%;
+   max-width: 900px;
+    width: 90%;
     margin: 20px auto;
     border: 4px solid #805465;
     padding: 20px;
@@ -34,7 +35,6 @@ header {
     padding: 40px;
     border-bottom: 2px solid #1F0F26;
     background: linear-gradient(135deg, #5d0124, #380116, #000000);
-    padding: 20px;
     border-radius: 20px;
 }
 
@@ -62,7 +62,7 @@ nav li {
 }
 
 nav li a {
-      display: block;
+    display: block;
     background: linear-gradient(to bottom, #380116, #5d0124);
     color: #F2F1E9;
     width: 200px;
@@ -79,6 +79,7 @@ nav li a {
 nav li a:hover {
     background: linear-gradient(to bottom, #4b011d, #25000e);
     transform: scale(1.05);
+    box-shadow: 0 0 10px #805465;
 }
 
 main h2 {
@@ -89,6 +90,7 @@ main h2 {
 
 .multi_col {
     display: flex;
+   
 }
 
 section, 
@@ -102,7 +104,7 @@ aside {
 
 section {
     width: 50%;
-    height: 50%;
+    
 }
 
 aside {
@@ -156,4 +158,54 @@ main h3 {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+.aboutme {
+    width: 50%;
+    height: 50%;
+    
+}
+
+.aboutme p {
+    text-align: center;  
+}
+
+.aboutme ul {
+    text-align: left;
+    margin: 0 auto; 
+    display: inline-block; 
+}
+
+.spotify_player iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 352px;
+}
+
+.about-layout section {
+    width: 30%;  
+}
+
+.about-layout aside {
+    width: 70%;  
+}
+
+.horror_map iframe {
+  width: 100%;
+  max-width: 600px; 
+  margin: 1rem auto;
+  display: block;
+}
+
+.spotify-text {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #F2F1E9;
+    text-align: center;
+    margin-bottom: 10px; 
 }
