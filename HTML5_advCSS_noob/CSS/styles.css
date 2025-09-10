@@ -225,11 +225,12 @@ iframe {
 
 .about-photos {
   display: flex;
+  justify-content: center;
   margin-bottom: 10px;       
 }
 
 .about-photos img {
-  width: 250px;
+  width: 150px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(242, 241, 233, 0.15);
