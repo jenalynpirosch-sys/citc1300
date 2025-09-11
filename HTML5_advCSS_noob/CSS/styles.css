@@ -210,7 +210,7 @@ iframe {
     margin-bottom: 10px; 
 }
 
-.tenor_gif_embed,
+.tenor-gif-embed,
 .spotify_player {
     border-radius: 12px;
 }
@@ -230,7 +230,7 @@ iframe {
 }
 
 .about_photos img {
-  width: 260px;  /* testing */
+  width: 260px; 
   height: auto;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(242, 241, 233, 0.15);
