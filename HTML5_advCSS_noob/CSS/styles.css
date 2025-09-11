@@ -147,14 +147,14 @@ main h3 {
     font-size: 25px;
 }
 
-.scroll-gallery {
+.scroll_gallery {
     max-height: 450px;  
     overflow-y: scroll;
     border: 2px solid #805465;
     border-radius: 10px;
     padding: 10px;
 }
-.scroll-gallery img {
+.scroll_gallery img {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -187,11 +187,11 @@ iframe {
     height: 352px;
 }
 
-.about-layout section {
+.about_layout section {
     width: 30%;  
 }
 
-.about-layout aside {
+.about_layout aside {
     width: 70%;  
 }
 
@@ -202,7 +202,7 @@ iframe {
   display: block;
 }
 
-.spotify-text {
+.spotify_text {
     font-family: Arial, sans-serif;
     font-size: 15px;
     color: #F2F1E9;
@@ -210,7 +210,7 @@ iframe {
     margin-bottom: 10px; 
 }
 
-.tenor-gif-embed,
+.tenor_gif_embed,
 .spotify_player {
     border-radius: 12px;
 }
@@ -223,13 +223,13 @@ iframe {
     overflow: hidden; 
 }
 
-.about-photos {
+.about_photos {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;       
 }
 
-.about-photos img {
+.about_photos img {
   width: 260px;  /* testing */
   height: auto;
   border-radius: 5px;
