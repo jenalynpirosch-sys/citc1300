@@ -76,7 +76,6 @@ h2, h3 {
 }
 
 /* duo column layout because I broke it once */
-/* MULTI-COLUMN LAYOUT (applies to all pages) */
 .multi_col {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +94,14 @@ h2, h3 {
     box-shadow: 0 0 8px rgba(41, 52, 115, 0.3);
     box-sizing: border-box; /* includes padding/border in width */
 }
+
+iframe {
+    max-width: 100%;  /* never exceed parent width */
+    width: 100%;      /* fill parent column */
+    height: auto;     /* optional, keeps aspect ratio */
+    border: 0;        /* optional cleanup */
+}
+
 
 /* nav things */
 
