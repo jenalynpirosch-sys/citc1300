@@ -9,8 +9,7 @@ body {
     background-color: #081412;
     color: #F2F1E9;
     font-family: "Roboto Flex", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: light;
+    font-weight: 300;
     font-style: normal;
     text-align: center;
 }
