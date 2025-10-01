@@ -75,7 +75,6 @@ h2, h3 {
     width: 90%;        /* flexible width for smaller screens */
 }
 
-/* duo column layout because I broke it once */
 .multi_col {
     display: flex;
     flex-wrap: wrap;
@@ -85,14 +84,17 @@ h2, h3 {
 }
 
 .multi_col > * {
-    flex: 1 1 45%;       /* almost half width on desktop */
-    min-width: 280px;    /* prevents columns from shrinking too small */
+    flex: 1 1 45%;
+    min-width: 280px;
     background-color: #0D1F1B;
     border: 2px solid #132a13;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 0 8px rgba(41, 52, 115, 0.3);
-    box-sizing: border-box; /* includes padding/border in width */
+    box-sizing: border-box;
+
+    display: flex;        /* new */
+    flex-direction: column; /* new: stack children vertically */
 }
 
 iframe {
@@ -100,6 +102,22 @@ iframe {
     width: 100%;      /* fill parent column */
     height: auto;     /* optional, keeps aspect ratio */
     border: 0;        /* optional cleanup */
+}
+
+.responsive-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+        margin-bottom: 20px
+}
+
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
