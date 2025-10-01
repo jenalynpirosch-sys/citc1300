@@ -71,25 +71,29 @@ h2, h3 {
     border-radius: 12px;
     margin: 20px auto;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1200px; /* caps container width on large screens */
+    width: 90%;        /* flexible width for smaller screens */
 }
 
 /* duo column layout because I broke it once */
+/* MULTI-COLUMN LAYOUT (applies to all pages) */
 .multi_col {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    width: 100%; /* ensures columns never exceed container width */
 }
 
 .multi_col > * {
-    flex: 1 1 45%;
-    min-width: 280px;
+    flex: 1 1 45%;       /* almost half width on desktop */
+    min-width: 280px;    /* prevents columns from shrinking too small */
     background-color: #0D1F1B;
     border: 2px solid #132a13;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 0 8px rgba(41, 52, 115, 0.3);
+    box-sizing: border-box; /* includes padding/border in width */
 }
 
 /* nav things */
@@ -172,26 +176,36 @@ footer {
 
 /*  responsive things */
 
-/* Mobile buttons */
+/* phone */
+
 @media (max-width: 767px) {
-    nav li {
-        display: block;
-        margin: 10px auto;
-    }
-
-    nav li a {
-        width: 200px;
-    }
-
     .multi_col {
         flex-direction: column;
     }
+
 
     .multi_col > * {
         flex: 1 1 100%;
         min-width: unset;
     }
 }
+
+/* Mobile: stack columns */
+@media (max-width: 767px) {
+  .multi_col {
+    flex-direction: column;
+  }
+
+.multi_col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%; /* new: ensures multi_col never exceeds container */
+}
+
+}
+
 
 /* Tablet mode */
 @media (min-width: 768px) and (max-width: 1023px) {
